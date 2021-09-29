@@ -1,0 +1,15 @@
+/* input[type="text"]:disabled {
+  background: #dddddd;
+} */
+.container {
+  background-color: lightgray;
+}
+
+.btn {
+  width: 100%;
+}
+
+.screen {
+  font-size: 40px;
+  text-align: right;
+}
