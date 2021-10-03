@@ -47,7 +47,7 @@ const pageLoaded = () => {
     return operation(firstNumber, secondNumber);
   };
 
-  let displayScreen = document.querySelector(".screen");
+  const displayScreen = document.querySelector(".screen");
 
   const onNumberClicked = (button) => {
     return () => {
