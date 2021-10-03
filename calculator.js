@@ -28,6 +28,25 @@ const pageLoaded = () => {
   let firstNum;
   let secondNum;
 
+  const reset = (answer) => {
+    operation = undefined;
+    firstNum = answer;
+    secondNum = undefined;
+    displayScreen.value = answer;
+    isNotCalculated = true;
+    isCalculatedByEquals = false;
+  };
+
+  const clear = () => {
+    reset(undefined);
+    displayScreen.value = "";
+  };
+
+  const calculate = (operator, firstNumber, secondNumber) => {
+    operation = operations[operator];
+    return operation(firstNumber, secondNumber);
+  };
+
   let displayScreen = document.querySelector(".screen");
 
   const onNumberClicked = (button) => {
@@ -75,6 +94,13 @@ const pageLoaded = () => {
     };
   };
 
+  const onEqualButtonClicked = () => {
+    secondNum = displayScreen.value;
+    let answer = calculate(operation, firstNum, secondNum);
+    reset(answer);
+    isCalculatedByEquals = true;
+  };
+
   const addNumericalButtonListener = (button) => {
     button.addEventListener("click", onNumberClicked(button));
   };
@@ -88,5 +114,11 @@ const pageLoaded = () => {
 
   const operatorButtons = document.querySelectorAll(".operator-btn");
   operatorButtons.forEach(addOperatorButtonListener);
+
+  const equalButton = document.querySelector("#equal-btn");
+  equalButton.addEventListener("click", onEqualButtonClicked);
+
+  const acButton = document.querySelector("#ac-btn");
+  acButton.addEventListener("click", clear);
 };
 pageLoaded();
