@@ -13,14 +13,14 @@
     />
   </head>
   <body>
-    <div class="container mt-4 p-4 shadow">
-      <div class="row">
-        <input type="text" class="screen" value="0" disabled />
+    <div class="container mx-auto mt-sm-0 p-4 shadow">
+      <div id= "screen-div"class="row">
+        <input type="text" class="screen" value="" disabled />
       </div>
       <div class="row">
         <div class="row g-2">
           <div class="col">
-            <button type="button" id="ac-btn" class="btn btn-danger">AC</button>
+            <button type="button" id="ac-btn" value="ac" class="btn btn-danger">AC</button>
           </div>
           <div class="col">
             <button type="button" id="bye-btn" class="btn btn-primary">
@@ -33,86 +33,85 @@
             </button>
           </div>
           <div class="col">
-            <button type="button" id="divide-btn" class="btn btn-warning">
+            <button type="button" id="divide-btn" value="/" class="btn operator-btn btn-warning">
               &#247
-
             </button>
           </div>
         </div>
         <div class="row g-2">
           <div class="col">
-            <button type="button" id="seven-btn" class="btn btn-outline-dark">
+            <button type="button" id="seven-btn" value="7" class="btn numerical-btn btn-outline-dark">
               7
             </button>
           </div>
           <div class="col">
-            <button type="button" id="eight-btn" class="btn btn-outline-dark">
+            <button type="button" id="eight-btn" value="8" class="btn numerical-btn btn-outline-dark">
               8
             </button>
           </div>
           <div class="col">
-            <button type="button" id="nine-btn" class="btn btn-outline-dark">
+            <button type="button" id="nine-btn" value="9" class="btn numerical-btn btn-outline-dark">
               9
             </button>
           </div>
           <div class="col">
-            <button type="button" id="multiply-btn" class="btn btn-warning">
+            <button type="button" id="multiply-btn" value="*" class="btn operator-btn btn-warning">
               &#215
             </button>
           </div>
         </div>
         <div class="row g-2">
           <div class="col">
-            <button type="button" id="four-btn" class="btn btn-outline-dark">
+            <button type="button" id="four-btn" value="4" class="btn numerical-btn btn-outline-dark">
               4
             </button>
           </div>
           <div class="col">
-            <button type="button" id="five-btn" class="btn btn-outline-dark">
+            <button type="button" id="five-btn" value="5" class="btn numerical-btn btn-outline-dark">
               5
             </button>
           </div>
           <div class="col">
-            <button type="button" id="six-btn" class="btn btn-outline-dark">
+            <button type="button" id="six-btn" value="6" class="btn numerical-btn btn-outline-dark">
               6
             </button>
           </div>
           <div class="col">
-            <button type="button" id="subtract-btn" class="btn btn-warning">
+            <button type="button" id="subtract-btn" value="-" class="btn operator-btn btn-warning">
               -
             </button>
           </div>
         </div>
         <div class="row g-2">
           <div class="col">
-            <button type="button" id="one-btn" class="btn btn-outline-dark">
+            <button type="button" id="one-btn" value="1" class="btn numerical-btn btn-outline-dark">
               1
             </button>
           </div>
           <div class="col">
-            <button type="button" id="two-btn" class="btn btn-outline-dark">
+            <button type="button" id="two-btn" value="2" class="btn numerical-btn btn-outline-dark">
               2
             </button>
           </div>
           <div class="col">
-            <button type="button" id="three-btn" class="btn btn-outline-dark">
+            <button type="button" id="three-btn" value="3" class="btn numerical-btn btn-outline-dark">
               3
             </button>
           </div>
           <div class="col">
-            <button type="button" id="add-btn" class="btn btn-warning">
+            <button type="button" id="add-btn" value="+" class="btn operator-btn btn-warning">
               +
             </button>
           </div>
         </div>
         <div class="row g-2">
           <div class="col-6">
-            <button type="button" id="zero-btn" class="btn btn-outline-dark">
+            <button type="button" id="zero-btn" value="0" class="btn numerical-btn btn-outline-dark">
               0
             </button>
           </div>
           <div class="col">
-            <button type="button" id="point-btn" class="btn btn-outline-dark">
+            <button type="button" id="point-btn" value="." class="btn numerical-btn btn-outline-dark">
               .
             </button>
           </div>
@@ -125,4 +124,5 @@
       </div>
     </div>
   </body>
+  <script src="calculator.js"></script>
 </html>
